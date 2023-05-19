@@ -12,38 +12,35 @@ Input data for Wes:
 
 Input data for Roy:
 /home/rz1478/rawdata
+
 ```
 ├── ana_code
-│   ├── scala_anal_rz1478.scala
-│   └── scala_anal_wsl300.scala
+│   ├── scala_anal_rz1478.scala
+│   └── scala_anal_wsl300.scala
 ├── data_ingest
-│   └── import_to_hdfs_wsl300.sh
+│   └── import_to_hdfs_wsl300.sh
 ├── etl_code
-│   ├── rz1478
-│   │   ├── CleanNYC (driver, mapper reducer)
-│   │   ├── CleanBoston (driver, mapper reducer)
-│   │   ├── CleanDC (driver, mapper reducer)
-│   │   ├── CleanIncome (driver, mapper reducer)
-│   │   ├── runMapReduce.sh
-│   │   └── import_to_hive_rz1478.hql
-
-│   └── wsl300
-│       ├── import_to_hive.hql
-│       ├── run_mapreduce.sh
-│       ├── CHI (folder contains driver, mapper, reducer)
-│       ├── LA (folder contains driver, mapper, reducer)
-│       └── SF (folder contains driver, mapper, reducer)
+│   ├── rz1478
+│   │   ├── CleanNYC (driver, mapper reducer)
+│   │   ├── CleanBoston (driver, mapper reducer)
+│   │   ├── CleanDC (driver, mapper reducer)
+│   │   ├── CleanIncome (driver, mapper reducer)
+│   │   ├── runMapReduce.sh
+│   │   └── import_to_hive_rz1478.hql
+│   └── wsl300
+│       ├── import_to_hive.hql
+│       ├── run_mapreduce.sh
+│       ├── CHI (folder contains driver, mapper, reducer)
+│       ├── LA (folder contains driver, mapper, reducer)
+│       └── SF (folder contains driver, mapper, reducer)
 └── profiling_code
-    └── rz1478
-        ├── exploring_boston.hql
-        ├── exploring_dc.hql
-        └── exploring_nyc.hql
+    ├──rz1478
+    │   ├── exploring_boston.hql
+    │   ├── exploring_dc.hql
+    │   └── exploring_nyc.hql
     └── wsl300
-        ├── profiling.scala
+        └── profiling.scala
 ```
-
-
-
 
 **data_ingest**
 - **import_to_hdfs_wsl300.sh**: this script imports data to hdfs from the local source
